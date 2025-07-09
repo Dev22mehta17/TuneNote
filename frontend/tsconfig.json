@@ -1,0 +1,20 @@
+// {
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ]
+// }
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",           // ✅ Required for React 17+ JSX
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["DOM", "ESNext"],     // ✅ DOM is necessary for JSX elements like <h1>
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"]              // ✅ Make sure your src/ is included
+}
