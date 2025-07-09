@@ -8,12 +8,17 @@
 //     <App />
 //   </StrictMode>,
 // )
+
+// This is the correct way
+// import { ClerkProvider } from '@clerk/clerk-react'
+import { ClerkProvider } from '@clerk/clerk-react';
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import App from './App'
 import './index.css' // ✅ Important
-// import { ClerkProvider } from '@clerk/clerk-react'
+
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 

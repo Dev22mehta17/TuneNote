@@ -1,8 +1,6 @@
 
+import { SignedOut, SignInButton, SignedIn, UserButton } from '@clerk/clerk-react';
 
-import { Button } from "./components/ui/button"
-
-// import React from 'react';
 function App() {
 
   return (
