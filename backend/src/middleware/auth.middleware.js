@@ -1,4 +1,4 @@
-import { clerkClient, ClerkClient } from "@clerk/express";
+import { clerkClient } from "@clerk/express";
 
 export const protectRoute=async(req,res,next)=>{
     if(!req.auth.userId){
@@ -19,6 +19,7 @@ export const requireAdmin=async (req,res,next)=>{
         next();
     }
     catch(error){
+        return res.status(500).json({message:"Internal server error",error});
 
     }
 }
